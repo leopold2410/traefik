@@ -1,0 +1,14 @@
+apiVersion: builtin
+kind: HelmChartInflationGenerator
+metadata:
+  # The name here doesn't matter.
+  name: traefik
+name: traefik
+# The name of the release
+releaseName: traefik
+# Path to a values.yaml
+valuesFile: values.yaml
+# Namespace to deploy to
+releaseNamespace: traefik
+# URL to the Repo
+repo:  https://traefik.github.io/charts

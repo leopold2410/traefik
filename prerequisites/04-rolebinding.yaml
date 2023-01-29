@@ -1,0 +1,13 @@
+kind: ClusterRoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: traefik-ingress
+subjects:
+- kind: ServiceAccount
+  name: traefik-ingress
+  namespace: traefik
+  apiGroup: ""
+roleRef:
+  kind: ClusterRole
+  name: traefik-ingress-controller
+  apiGroup: ""
