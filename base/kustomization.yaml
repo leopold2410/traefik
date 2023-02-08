@@ -9,3 +9,4 @@ generators:
 resources:
   - 07-svc-webui.yaml
   - 08-ingress-webui.yaml
+  - 09-ingress-metrics.yaml

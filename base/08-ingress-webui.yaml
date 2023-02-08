@@ -16,3 +16,12 @@ spec:
             name: traefik-web-ui
             port:
               name: web
+  - http:
+      paths:
+      - pathType: Prefix
+        path: "/ping"
+        backend:
+          service:
+            name: traefik-web-ui
+            port:
+              name: web
